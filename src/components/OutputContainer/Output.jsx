@@ -1,5 +1,4 @@
 import styled from "styled-components";
-import "./output.css";
 
 export default function OutputContainer() {
   return (
@@ -52,4 +51,28 @@ const TipAmount = styled.div`
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+
+  & .resultTitle {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  & .resultTitle p {
+    font-size: 1.6rem;
+    font-weight: bold;
+    color: #fff;
+  }
+
+  & .resultTitle span {
+    font-size: 1.3rem;
+    font-weight: bold;
+    color: #7f9d9f;
+  }
+
+  & .result {
+    font-size: 4.8rem;
+    font-weight: bold;
+    color: #26c2ae;
+  }
 `;

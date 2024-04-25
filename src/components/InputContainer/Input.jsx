@@ -1,5 +1,4 @@
 import styled from "styled-components";
-import "./input.css";
 import OutputContainer from "../OutputContainer/Output";
 
 export default function InputContainer() {
@@ -11,7 +10,7 @@ export default function InputContainer() {
         <div className="dollarInput">
           <img
             className="dollarIcon"
-            src="./src/assets/dollar-icon.svg"
+            src="./images/icon-dollar.svg"
             alt=""
           />
           <input type="text" name="" id="" placeholder="0" />
@@ -34,10 +33,10 @@ export default function InputContainer() {
         <div className="personInput">
           <img
             className="personIcon"
-            src="./src/assets/person-icon.svg"
+            src="./images/icon-person.svg"
             alt=""
           />
-          <input type="text" name="" id="" placeholder="0"/>
+          <input type="text" name="" id="" placeholder="0" />
         </div>
       </form>
     </InputComponent>
@@ -49,6 +48,102 @@ const InputComponent = styled.div`
   display: flex;
   flex-direction: column;
   gap: 4rem;
+
+  & .billInput label,
+  .tipTitle,
+  .peopleInput label {
+    font-size: 1.6rem;
+    font-weight: bold;
+    color: #5e7a7d;
+  }
+
+  & input {
+    cursor: pointer;
+  }
+
+  & .billInput input {
+    width: 37.9rem;
+    height: 4.8rem;
+    padding: 0.6rem 1.7rem 0.6rem 1.9rem;
+    border-radius: 0.5rem;
+    background-color: #f3f9fa;
+    font-size: 2.4rem;
+    font-weight: bold;
+    color: #00474b;
+    text-align: right;
+    margin-top: 0.6rem;
+  }
+
+  & .billInput input:hover,
+  .customInput:hover,
+  .peopleInput input:hover {
+    border: solid 0.2rem #26c2ae;
+  }
+
+  & .dollarIcon {
+    height: 1.6rem;
+    opacity: 0.35;
+    transform: translateX(3rem);
+  }
+
+  & .dollarInput {
+    display: flex;
+    align-items: center;
+    transform: translateX(-1.5rem);
+  }
+
+  & .peopleInput input {
+    width: 37.9rem;
+    height: 4.8rem;
+    padding: 0.6rem 1.7rem 0.6rem 1.9rem;
+    border-radius: 0.5rem;
+    background-color: #f3f9fa;
+    font-size: 2.4rem;
+    font-weight: bold;
+    color: #00474b;
+    text-align: right;
+    margin-top: 0.6rem;
+  }
+
+  & .personIcon {
+    height: 1.6rem;
+    opacity: 0.35;
+    transform: translateX(3rem);
+  }
+
+  & .personInput {
+    display: flex;
+    align-items: center;
+    transform: translateX(-1.5rem);
+  }
+
+  & .buttons {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    align-items: center;
+    row-gap: 1.6rem;
+    column-gap: 1.4rem;
+    margin-top: 0.6rem;
+  }
+
+  & .customInput {
+    width: 11.7rem;
+    height: 4.8rem;
+    border-radius: 0.5rem;
+    background-color: #f3f9fa;
+    font-size: 2.4rem;
+    text-align: center;
+  }
+
+  & .customInput::placeholder {
+    font-weight: bold;
+    opacity: 1;
+    color: #547878;
+  }
+
+  & ::placeholder {
+    opacity: 0.35;
+  }
 `;
 
 const TipPerc = styled.button`

@@ -8,7 +8,7 @@ import OutputContainer from "./components/OutputContainer/Output";
 function App() {
   return (
     <>
-      <Splitter>SPLITTER</Splitter>
+      <Splitter src="./images/logo.svg" alt="splitter" />
       <Container>
         <InputContainer />
         <OutputContainer />
@@ -17,13 +17,10 @@ function App() {
   );
 }
 
-const Splitter = styled.h1`
-  font-size: 1.6rem;
-  letter-spacing: 0.2cm;
-  color: #3d6666;
-  word-wrap: break-word;
-  width: 8.6rem;
+const Splitter = styled.img`
   margin: 2rem auto 8.7rem;
+  display: flex;
+  justify-content: center;
 `;
 
 const Container = styled.div`

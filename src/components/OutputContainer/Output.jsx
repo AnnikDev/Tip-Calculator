@@ -39,7 +39,7 @@ const Reset = styled.button`
   width: 33.3rem;
   height: 4.8rem;
   border-radius: 0.5rem;
-  background-color: #9fe8df;
+  background-color: #0d686d;
   font-size: 2rem;
   font-weight: bold;
   color: #00474b;

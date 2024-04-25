@@ -8,12 +8,8 @@ export default function InputContainer() {
       <form className="billInput" action="">
         <label htmlFor="">Bill</label>
         <div className="dollarInput">
-          <img
-            className="dollarIcon"
-            src="./images/icon-dollar.svg"
-            alt=""
-          />
-          <input type="text" name="" id="" placeholder="0" />
+          <img className="dollarIcon" src="./images/icon-dollar.svg" alt="" />
+          <input type="text" name="" id="bill" placeholder="0" />
         </div>
       </form>
 
@@ -31,12 +27,8 @@ export default function InputContainer() {
         <label htmlFor="">Number of People</label>
         <br></br>
         <div className="personInput">
-          <img
-            className="personIcon"
-            src="./images/icon-person.svg"
-            alt=""
-          />
-          <input type="text" name="" id="" placeholder="0" />
+          <img className="personIcon" src="./images/icon-person.svg" alt="" />
+          <input type="text" name="" id="number" placeholder="0" />
         </div>
       </form>
     </InputComponent>

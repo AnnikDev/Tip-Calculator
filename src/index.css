@@ -1,7 +1,9 @@
-html {
+body {
   background-color: #c5e4e7;
   display: flex;
   justify-content: center;
+  align-items: center;
+  height: 100vh;
 }
 
 * {
@@ -10,4 +12,5 @@ html {
   padding: 0;
   box-sizing: border-box;
   font-family: "Space Mono", monospace;
+  border-style: none;
 }

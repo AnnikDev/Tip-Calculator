@@ -41,12 +41,24 @@ const InputComponent = styled.div`
   flex-direction: column;
   gap: 4rem;
 
+  @media screen and (max-width: 950px) {
+    gap: 2rem;
+  }
+
+  @media screen and (max-width: 765px) {
+    margin-bottom: 3rem;
+  }
+
   & .billInput label,
   .tipTitle,
   .peopleInput label {
     font-size: 1.6rem;
     font-weight: bold;
     color: #5e7a7d;
+
+    @media screen and (max-width: 950px) {
+      font-size: 1.4rem;
+    }
   }
 
   & input {
@@ -64,6 +76,15 @@ const InputComponent = styled.div`
     color: #00474b;
     text-align: right;
     margin-top: 0.6rem;
+
+    @media screen and (max-width: 950px) {
+      width: 30.9rem;
+      height: 4rem;
+    }
+
+    @media screen and (max-width: 400px) {
+      width: 28rem;
+    }
   }
 
   & .billInput input:hover,
@@ -95,6 +116,15 @@ const InputComponent = styled.div`
     color: #00474b;
     text-align: right;
     margin-top: 0.6rem;
+
+    @media screen and (max-width: 950px) {
+      width: 30.9rem;
+      height: 4rem;
+    }
+
+    @media screen and (max-width: 400px) {
+      width: 28rem;
+    }
   }
 
   & .personIcon {
@@ -116,6 +146,16 @@ const InputComponent = styled.div`
     row-gap: 1.6rem;
     column-gap: 1.4rem;
     margin-top: 0.6rem;
+    width: 37.9rem;
+
+    @media screen and (max-width: 950px) {
+      width: 30.9rem;
+    }
+
+    @media screen and (max-width: 400px) {
+      width: 28rem;
+      grid-template-columns: 1fr 1fr;
+    }
   }
 
   & .customInput {
@@ -125,6 +165,16 @@ const InputComponent = styled.div`
     background-color: #f3f9fa;
     font-size: 2.4rem;
     text-align: center;
+
+    @media screen and (max-width: 950px) {
+      width: 9rem;
+      height: 4rem;
+      font-size: 2rem;
+    }
+
+    @media screen and (max-width: 400px) {
+      width: 13rem;
+    }
   }
 
   & .customInput::placeholder {
@@ -151,5 +201,15 @@ const TipPerc = styled.button`
   &&:hover {
     background-color: #26c2ae;
     color: #00474b;
+  }
+
+  @media screen and (max-width: 950px) {
+    width: 9rem;
+    height: 4rem;
+    font-size: 2rem;
+  }
+
+  @media screen and (max-width: 400px) {
+    width: 13rem;
   }
 `;

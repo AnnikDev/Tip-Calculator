@@ -23,7 +23,7 @@ const Splitter = styled.h1`
   color: #3d6666;
   word-wrap: break-word;
   width: 8.6rem;
-  margin: 16.3rem auto 8.7rem;
+  margin: 2rem auto 8.7rem;
 `;
 
 const Container = styled.div`

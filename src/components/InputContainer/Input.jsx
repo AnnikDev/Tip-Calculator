@@ -3,7 +3,7 @@ import "./input.css";
 import OutputContainer from "../OutputContainer/Output";
 
 export default function InputContainer() {
-  const arr = ["5%", "10%", "15%", "25%", "50%"];
+  const btnsArr = ["5%", "10%", "15%", "25%", "50%"];
   return (
     <InputComponent>
       <form className="billInput" action="">
@@ -14,15 +14,15 @@ export default function InputContainer() {
             src="./src/assets/dollar-icon.svg"
             alt=""
           />
-          <input type="text" name="" id="" />
+          <input type="text" name="" id="" placeholder="0" />
         </div>
       </form>
 
       <div className="tipButtons">
         <p className="tipTitle">Select Tip %</p>
         <div className="buttons">
-          {arr.map((el) => {
-            return <TipPerc>{el}</TipPerc>;
+          {btnsArr.map((el, i) => {
+            return <TipPerc key={i}>{el}</TipPerc>;
           })}
           <input placeholder="Custom" className="customInput" />
         </div>
@@ -37,7 +37,7 @@ export default function InputContainer() {
             src="./src/assets/person-icon.svg"
             alt=""
           />
-          <input type="text" name="" id="" />
+          <input type="text" name="" id="" placeholder="0"/>
         </div>
       </form>
     </InputComponent>

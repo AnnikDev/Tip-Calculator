@@ -23,7 +23,9 @@ input {
   margin-top: 0.6rem;
 }
 
-.billInput input:hover,.customInput:hover,.peopleInput input:hover {
+.billInput input:hover,
+.customInput:hover,
+.peopleInput input:hover {
   border: solid 0.2rem #26c2ae;
 }
 
@@ -79,7 +81,15 @@ input {
   border-radius: 0.5rem;
   background-color: #f3f9fa;
   font-size: 2.4rem;
-  color: #547878;
   text-align: center;
+}
+
+.customInput::placeholder {
   font-weight: bold;
+  opacity: 1;
+  color: #547878;
+}
+
+::placeholder {
+  opacity: 0.35;
 }
